@@ -3,13 +3,7 @@ import { VectorDBQAChain } from "langchain/chains";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { OpenAI } from "langchain/llms/openai";
 import { PineconeStore } from "langchain/vectorstores/pinecone";
-/**
- *
- * WARNING: THIS IS THE SOLUTION! Please try coding before viewing this.
- *
- */
 
-// Example: https://js.langchain.com/docs/modules/indexes/document_loaders/examples/file_loaders/pdf
 export default async function handler(req, res) {
   try {
     if (req.method !== "POST") {
@@ -39,7 +33,7 @@ export default async function handler(req, res) {
       { pineconeIndex }
     );
 
-    /* Part Two: Use as part of a chain (currently no metadata filters) */
+    /* Use as part of a chain (currently no metadata filters) */
 
     const model = new OpenAI();
     const chain = VectorDBQAChain.fromLLM(model, vectorStore, {

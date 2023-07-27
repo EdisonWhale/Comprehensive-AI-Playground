@@ -52,7 +52,8 @@ export default async function handler(req, res) {
     console.log("Uploading book");
     // Enter your code here
     /** STEP ONE: LOAD DOCUMENT */
-    const bookPath = "data/document_loaders/naval-ravikant-book.pdf";
+    const bookPath =
+      "../../../../data/document_loaders/naval-ravikant-book.pdf";
     const loader = new PDFLoader(bookPath);
 
     const docs = await loader.load();
