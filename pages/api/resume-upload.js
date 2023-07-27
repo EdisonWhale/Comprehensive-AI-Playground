@@ -19,14 +19,14 @@ export default async function handler(req, res) {
   //   console.log(process.env.PINECONE_API_KEY);
   //   console.log(process.env.PINECONE_ENVIRONMENT);
   //   console.log(process.env.PINECONE_INDEX);
+  const path = require("path");
+
   try {
     // Load the directory
-    const loader = new DirectoryLoader(
-      "/Users/EdisonWhale/Desktop/openai-javascript-course-1-start-here/data/resumes",
-      {
-        ".pdf": (path) => new PDFLoader(path, "/pdf"),
-      }
-    );
+    const directoryPath = path.join(__dirname, "../../../../data/resumes");
+    const loader = new DirectoryLoader(directoryPath, {
+      ".pdf": (path) => new PDFLoader(path, "/pdf"),
+    });
 
     const docs = await loader.load();
     // console.log(`Loaded ${docs.length}`);

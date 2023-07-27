@@ -106,6 +106,9 @@ const ResumeReader = () => {
     }
   };
 
+  function handleDownload() {
+    window.location.href = "/api/Resume-download";
+  }
   return (
     <>
       <>
@@ -126,7 +129,7 @@ const ResumeReader = () => {
                   buttonText=" Upload Resumes 📂"
                 />
                 <Button
-                  handleSubmit={handleSubmitUpload}
+                  handleSubmit={handleDownload}
                   endpoint=""
                   buttonText=" Download Sample Resumes 📥"
                 />
