@@ -15,6 +15,15 @@ The Comprehensive AI Playground offers a wide array of functionalities designed 
 - **Memory Management**: Advanced memory handling for AI models, allowing for more coherent and context-aware interactions.
 - **Customizable UI Components**: From navigation bars to buttons and input fields, tailor the user interface to your liking with pre-built components.
 
+# Demo Photo
+![1716177032028](https://github.com/EdisonWhale/Comprehensive-AI-Playground/assets/103423072/34bb536e-56a4-49a5-b02e-5f6fe852804e)
+
+
+
+
+![1716177078484](https://github.com/EdisonWhale/Comprehensive-AI-Playground/assets/103423072/8436d5bc-c16b-434b-bf9a-6e6aff35d69d)
+
+
 ## Getting Started
 
 To get started with the Comprehensive AI Playground, follow these steps:
